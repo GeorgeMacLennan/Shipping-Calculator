@@ -2,6 +2,9 @@ package com.example.shippingcalculator;
 
 public class ShipItem {
     Double weight;
+    Double baseCost;
+    Double addedCost;
+    Double totalCost;
     static final Double BASE = 3.00;
     static final Double ADDED = 0.50;
     static final Double EXTRA = 4.00;
@@ -10,6 +13,9 @@ public class ShipItem {
 
     public ShipItem() {
         weight = 0.0;
+        addedCost = 0.0;
+        baseCost = BASE;
+        totalCost = 0.0;
     }
 
     public ShipItem(Double weight) {
